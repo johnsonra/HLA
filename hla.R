@@ -25,3 +25,15 @@ names(hlaB.broad) <- tmp$alleleGroup
 tmp <- read.csv('data/hlaC_broad.csv', comment.char = '#', colClasses = 'character')
 hlaC.broad <- tmp$broadSpecificity
 names(hlaC.broad) <- tmp$alleleGroup
+
+
+################
+# HLA B Groups #
+################
+
+# this section contains Bw4 and Bw6 assocated specificities (last updated Feb 2, 2015)
+# see http://hla.alleles.org/antigens/bw46.html for low resolution details
+# and http://www.ufrgs.br/imunovet/molecular_immunology/hla.html for additional details
+
+hlaBw <- read.csv('data/hlaBw.csv', comment.char = '#')
+
