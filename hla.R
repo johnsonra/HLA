@@ -35,5 +35,16 @@ names(hlaC.broad) <- tmp$alleleGroup
 # see http://hla.alleles.org/antigens/bw46.html for low resolution details
 # and http://www.ufrgs.br/imunovet/molecular_immunology/hla.html for additional details
 
-hlaBw <- read.csv('data/hlaBw.csv', comment.char = '#')
+hlaBw <- read.csv('data/hlaBw.csv', comment.char = '#', stringsAsFactors = FALSE,
+                  na.strings = '')
 
+
+################
+# HLA C Groups #
+################
+
+# this section contains information on HLA-C groups 1 and 2
+# see http://www.ufrgs.br/imunovet/molecular_immunology/hla.html for additional details
+
+hlaCgrp <- read.csv('data/hlaCgrp.csv', comment.char = '#', stringsAsFactors = FALSE,
+                    na.strings = '')
