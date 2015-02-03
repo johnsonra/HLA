@@ -23,6 +23,6 @@ Each data set has the following columns, with one additional column of data for 
 * hla - The corresponding HLA gene (i.e. HLA-A or HLA-B). This is not present in the hlaCgrp dataset since all those alleles belong to HLA-C.
 * allele - The allele group or more specific HLA protein. 
 * bwGroup/group - The Bw or C group associated with the specified allele.
-* exceptions - A logical value indicating if there are exceptions to the low resolution classification (i.e. HLA-C\*08 is generally a part of C group 1, but one rare specific protein, HLA-C\*08:10 actually falls into C group 2).
+* exceptions - A logical value indicating if there are exceptions to the low resolution classification (e.g. HLA-C\*08 is generally a part of C group 1, but one rare specific protein, HLA-C\*08:10 actually falls into C group 2).
 
 The exceptions listed at the end of the file after the line "#### Exceptions ####" contain exceptions to the general rules listed above. When only low resolution typing is available, these general rules can be used, as the exceptions are rare. The one case where exceptions are common, HLA-B*15, the bwGroup entry is missing.
