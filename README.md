@@ -10,9 +10,10 @@ The csv tables are broken down by broad specificities, separated by '#', and con
 
 R data sets for each HLA gene are simply a named character vector. Thus, to obtain the broad specificity for HLA-A*23, one could enter the following at the R command line after loading the appropriate data file:
 
-\> hlaA.broad['23']
-
+````R
+> hlaA.broad['23']
 '09'
+````
 
 ### HLA-Bw/C Groups
 Group definitions for Bw4/6 and HLA-C groups 1 and 2 are given in the hlaCgrp and hlaBw data sets. These generally follow the convention found at http://hla.alleles.org/antigens/bw46.html, with additional information on specific HLA proteins in some HLA allele groups that have been shown to be exceptions as published at http://www.ufrgs.br/imunovet/molecular_immunology/hla.html.
@@ -22,6 +23,6 @@ Each data set has the following columns, with one additional column of data for 
 * hla - The corresponding HLA gene (i.e. HLA-A or HLA-B). This is not present in the hlaCgrp dataset since all those alleles belong to HLA-C.
 * allele - The allele group or more specific HLA protein. 
 * bwGroup/group - The Bw or C group associated with the specified allele.
-* exceptions - A logical value indicating if there are exceptions to the low resolution classification (i.e. HLA-C*08 is generally a part of C group 1, but one rare specific protein, HLA-C*08:10 actually falls into C group 2).
+* exceptions - A logical value indicating if there are exceptions to the low resolution classification (i.e. HLA-C\*08 is generally a part of C group 1, but one rare specific protein, HLA-C\*08:10 actually falls into C group 2).
 
 The exceptions listed at the end of the file after the line "#### Exceptions ####" contain exceptions to the general rules listed above. When only low resolution typing is available, these general rules can be used, as the exceptions are rare. The one case where exceptions are common, HLA-B*15, the bwGroup entry is missing.
