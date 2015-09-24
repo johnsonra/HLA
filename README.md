@@ -26,3 +26,7 @@ Each data set has the following columns, with one additional column of data for 
 * exceptions - A logical value indicating if there are exceptions to the low resolution classification (e.g. HLA-C\*08 is generally a part of C group 1, but one rare specific protein, HLA-C\*08:10 actually falls into C group 2).
 
 The exceptions listed at the end of the file after the line "#### Exceptions ####" contain exceptions to the general rules listed above. When only low resolution typing is available, these general rules can be used, as the exceptions are rare. The one case where exceptions are common, HLA-B*15, the bwGroup entry is missing.
+
+### HLA/KIR Ligand
+For more information on HLA ligands to KIR, see the following papers: [Colonna 1993](https://scholar.google.com/scholar_lookup?title=HLA-C+is+the+inhibitory+ligand+that+determines+dominant+resistance+to+lysis+by+NK1-+and+NK2-specific+natural+killer+cells&author=M.+Colonna&author=G.+Borsellino&author=M.+Falco&author=G.+B.+Ferrara&author=J.+L.+Strominger&publication_year=1993), [Wagtmann 1995](http://www.sciencedirect.com/science/article/pii/1074761395900691),
+[Moesta 1998](http://www.jimmunol.org/content/180/6/3969.short), [Winter 1998](http://www.jimmunol.org/content/180/6/3969.short), [Gumpertz 1995](http://jem.rupress.org/content/181/3/1133.abstract), [Pende 1996](http://jem.rupress.org/content/184/2/505.abstract), [Stewart 2005](http://www.pnas.org/content/102/37/13224.long), and [Moesta 2010](http://www.jimmunol.org/content/185/7/4233.short).
